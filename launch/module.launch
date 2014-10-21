@@ -1,8 +1,7 @@
 <launch>    
     <arg name="node_name" default="ip" />
     
-    <node pkg="oddbot_boot" type="oddbot_boot_module" name="$(arg node_name)" output="screen">
-    
-    </node>
+    	<node pkg="perce_kinect" type="perce_boot_module" name="$(arg node_name)" output="screen"/>
+        <node pkg="perce_kinect" type="oddbot_perce_test" name="oddbot_perce_test" output="screen"/>
 
 </launch>

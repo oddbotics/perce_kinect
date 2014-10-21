@@ -9,4 +9,4 @@ awk '{
 	print "module_" subnet
 }')
 # echo $address
-roslaunch oddbot_boot module.launch node_name:=$address
+roslaunch perce_kinect module.launch node_name:=$address
