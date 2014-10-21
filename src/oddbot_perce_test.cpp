@@ -10,8 +10,6 @@ oddbot_perce_test::oddbot_perce_test(){
 }
 // Callback message
 void oddbot_perce_test::get_info(const sensor_msgs::JointState::ConstPtr& jointstate_in_msg){
-	ROS_INFO("test");
-	ROS_INFO("%lf",jointstate_in_msg->position[0]);
 	if(jointstate_in_msg->position.size() > 0){
 		ROS_INFO("Getting this joint state: %lf",jointstate_in_msg->position[0]);
 	}
@@ -23,7 +21,7 @@ void oddbot_perce_test::send_jointstate_out(){
   jointstate_out_msg.position.assign(1, 1.0);
   // Publish the jointstate_out
   commandjointstate_pub.publish(jointstate_out_msg);
-  //ROS_INFO("commandjointstate_pub sent %lf",jointstate_out_msg.position[0]);
+  ROS_INFO("sending %lf",jointstate_out_msg.position[0]);
 }
 
 
