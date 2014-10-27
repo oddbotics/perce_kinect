@@ -11,3 +11,6 @@ int rate = 10;
 int loop_delay = 100;
 
 bool has_new_servo_command = false;
+
+int pan_servo_position_cmd;
+int tilt_servo_position_cmd;
