@@ -1,4 +1,4 @@
-perce_kinect
-============
+oddbot_perception
+===========
 
-The kinect perception module code
+
