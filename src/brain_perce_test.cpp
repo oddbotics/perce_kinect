@@ -1,4 +1,4 @@
-#include "perce_kinect/oddbot_perce_test_reverse.h"
+#include "perce_kinect/brain_perce_test.h"
 
 oddbot_perce_test_reverse::oddbot_perce_test_reverse(){
 	//subscribe to oddbot_boot

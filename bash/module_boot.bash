@@ -9,4 +9,4 @@ awk '{
 	print "module_" subnet
 }')
 # echo $address
-roslaunch perce_kinect module.launch node_name:=$address
+roslaunch perce_kinect perce_kinect_module.launch node_name:=$address

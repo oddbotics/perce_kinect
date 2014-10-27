@@ -106,8 +106,8 @@ include_directories(include
 # )
 
 ## Declare a cpp executable
-add_executable(oddbot_perce_test src/oddbot_perce_test.cpp)
-add_executable(oddbot_perce_test_reverse src/oddbot_perce_test_reverse.cpp)
+add_executable(perce_test src/perce_test.cpp)
+add_executable(brain_perce_test src/brain_perce_test.cpp)
 add_executable(perce_boot_kinect src/perce_boot_kinect.cpp)
 
 ## Add cmake target dependencies of the executable/library
@@ -115,10 +115,10 @@ add_executable(perce_boot_kinect src/perce_boot_kinect.cpp)
 # add_dependencies(oddbot_boot_node oddbot_boot_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(oddbot_perce_test
+target_link_libraries(perce_test
   ${catkin_LIBRARIES}
 )
-target_link_libraries(oddbot_perce_test_reverse
+target_link_libraries(brain_perce_test
   ${catkin_LIBRARIES}
 )
 target_link_libraries(perce_boot_kinect
