@@ -1,7 +1,16 @@
 <launch>    
     <arg name="node_name" default="ip" />
+	<arg name="port" default="/dev/ttymxc3" />
     
-    	<node pkg="perce_kinect" type="perce_boot_kinect" name="$(arg node_name)" output="screen"/>
-        <node pkg="perce_kinect" type="oddbot_perce_test" name="oddbot_perce_test" output="screen"/>
+<!-- Nodes for the arduino and rosserial -->
+    <node pkg="rosserial_python" type="serial_node.py" name="perce_serial_node" output="screen">
+		<param name="port" type="string" value="$(arg port)" />
+	</node
+		
+<!-- Nodes for the vision system (Kinect or Xtion) -->
+	<include file="$(find freenect_launch)/launch/freenect-registered-xyzrgb.launch" />
+
+<!-- Nodes for the vision system on brain-->
+
 
 </launch>
