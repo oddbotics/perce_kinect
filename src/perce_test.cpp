@@ -1,4 +1,4 @@
-#include "perce_kinect/oddbot_perce_test.h"
+#include "perce_kinect/perce_test.h"
 
 oddbot_perce_test::oddbot_perce_test(){
 	//subscribe to oddbot_boot
