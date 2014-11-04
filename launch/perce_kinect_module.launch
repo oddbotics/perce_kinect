@@ -5,10 +5,10 @@
 <!-- Nodes for the arduino and rosserial -->
     <node pkg="rosserial_python" type="serial_node.py" name="perce_serial_node" output="screen">
 		<param name="port" type="string" value="$(arg port)" />
-	</node
+    </node>
 		
 <!-- Nodes for the vision system (Kinect or Xtion) -->
-	<include file="$(find freenect_launch)/launch/freenect-registered-xyzrgb.launch" />
+    <include file="$(find freenect_launch)/launch/examples/freenect-registered-xyzrgb.launch" />
 
 <!-- Nodes for the vision system on brain-->
 
